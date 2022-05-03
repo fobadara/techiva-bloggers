@@ -39,10 +39,11 @@
     - [Clone this repository](#clone-this-repository)
     - [Move into the directory with](#move-into-the-directory-with)
     - [Install linter](#install-linter)
-    - [Run Project](#run-project)
+    - [Create the database](#create-the-database)
     - [Install linter](#install-linter-1)
     - [Run linter](#run-linter)
       - [Auto-correct](#auto-correct)
+    - [Run Project](#run-project)
     - [Usage](#usage)
     - [Roadmap](#roadmap)
   - [Built With 🔨](#built-with-)
@@ -130,9 +131,15 @@ git clone https://github.com/fobadara/techiva-bloggers.git
   ```bash
   bundle install
   ```
-### Run Project
+### Create the database
+
 ```bash
-ruby main.rb
+rails db:create
+```
+<div align="center">OR</div>
+
+```bash
+rake db:create
 ```
 
 ### Install linter
@@ -160,8 +167,9 @@ npx stylelint "**/*.{css,scss}"
 
 #### Auto-correct
 
-In auto-correct mode, RuboCop will try to automatically fix offenses:
+In auto-correct mode, RuboCop and stylelint will try to automatically fix offenses:
 
+For rubocop:
 ```bash
 rubocop -A
 ```
@@ -170,6 +178,27 @@ rubocop -A
 ```bash
 rubocop --auto-correct-all
 ```
+
+For stylelint:
+
+```bash
+npx stylelint "**/*.{css,scss}" --fix
+```
+### Run Project
+```bash
+rails s
+```
+<div align="center">OR</div>
+
+```bash
+rails server 
+```
+This will start a server at:
+```bash
+localhost:3000
+```
+You can paste or type it on url bar
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
