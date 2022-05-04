@@ -71,10 +71,8 @@
 ### Wireframe
 <div align="center">
 
-||||
-|-|-------------|-|
-||![Wireframe for login page](app/assets/images/blog_login.png)![Wireframe for users](app/assets/images/blog_user_page.png)![ Wireframe for User page](app/assets/images/blog_user_page.png)![Wireframe for all posts page](app/assets/images/blog_user_all_posts.png)![Wireframe for a full post](app/assets/images/blog_single_post.png)
-||
+![Wireframe for login page](app/assets/images/blog_login.png)![Wireframe for users](app/assets/images/blog_user_page.png)![ Wireframe for User page](app/assets/images/blog_user_page.png)![Wireframe for all posts page](app/assets/images/blog_user_all_posts.png)![Wireframe for a full post](app/assets/images/blog_single_post.png)
+
 </div>
 
 
