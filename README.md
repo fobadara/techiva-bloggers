@@ -73,8 +73,8 @@
 
 ||||
 |-|-------------|-|
-||![Wireframe for login page](app/assets/images/blog_login.png)![Wireframe for users](app/assets/images/blog_user_page.png)![ Wireframe for User page](app/assets/images/blog_user_page.png)![Wireframe for all posts page](app/assets/images/blog_user_all_posts.png)![Wireframe for a full post](app/assets/images/blog_single_post.png)
-||
+||<p align="center"><img src="app/assets/images/blog_login.png" alt="Login page wireframe" width="250px"/><img src="app/assets/images/blog_root_users.png" alt="All users page wireframe"  width="250px"/><img src="app/assets/images/blog_user_page.png" alt="Single user page wireframe"  width="250px"/><img src="app/assets/images/blog_single_post.png" alt="Single user page wireframe"  width="250px"/></p>||
+
 </div>
 
 
@@ -209,7 +209,7 @@ This will be included when app is done.
 ### Roadmap
 
 - [x] Setup and controllers
-- [ ] Controllers specs
+- [x] Controllers specs
 - [ ] Creating a data model
 - [ ] Processing data in models
 - [ ] Views
@@ -248,7 +248,7 @@ This will be included when app is done.
 |---|
 |<a target="_blank" href="https://github.com/fobadara"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/fob90s"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/fob90s"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>  
 <a target="_blank" href="mailto:fob90s@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white" alt="Gmail account"></a> <a target="_blank" href="https://wa.me/+2349066478370"> <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp account"></a> 
-(Click any of the badges to reach me)|
+(Click any of the badges to reach me. Especially whatsapp)|
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
