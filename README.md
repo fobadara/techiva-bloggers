@@ -69,8 +69,13 @@
 </div>
 
 ### Wireframe
+<div align="center">
 
-![Wireframe for login page](app/assets/images/blog_login.png)![Wireframe for users](app/assets/images/blog_user_page.png)![ Wireframe for User page](app/assets/images/blog_user_page.png)![Wireframe for all posts page](app/assets/images/blog_user_all_posts.png)![Wireframe for a full post](app/assets/images/blog_single_post.png)
+||||
+|-|-------------|-|
+|<img src="app/assets/images/blog_login.png" alt="Login page wireframe" width="250px"/><img src="app/assets/images/blog_root_users.png" alt="All users page wireframe"  width="250px"/><img src="app/assets/images/blog_user_page.png" alt="Single user page wireframe"  width="250px"/><img src="app/assets/images/blog_single_post.png" alt="Single user page wireframe"  width="250px"/>|
+||
+</div>
 
 
 ## Description 🏗️
