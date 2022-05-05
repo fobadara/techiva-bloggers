@@ -73,8 +73,7 @@
 
 ||||
 |-|-------------|-|
-||
-<p align="center"><img src="app/assets/images/blog_login.png" alt="Login page wireframe" width="250px"/><img src="app/assets/images/blog_root_users.png" alt="All users page wireframe"  width="250px"/><img src="app/assets/images/blog_user_page.png" alt="Single user page wireframe"  width="250px"/><img src="app/assets/images/blog_single_post.png" alt="Single user page wireframe"  width="250px"/></p>||||
+|<p align="center"><img src="app/assets/images/blog_login.png" alt="Login page wireframe" width="250px"/><img src="app/assets/images/blog_root_users.png" alt="All users page wireframe"  width="250px"/><img src="app/assets/images/blog_user_page.png" alt="Single user page wireframe"  width="250px"/><img src="app/assets/images/blog_single_post.png" alt="Single user page wireframe"  width="250px"/></p>|||
 
 </div>
 
