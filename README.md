@@ -210,7 +210,7 @@ This will be included when app is done.
 
 - [x] Setup and controllers
 - [x] Controllers specs
-- [ ] Creating a data model
+- [x] Creating a data model
 - [ ] Processing data in models
 - [ ] Views
 - [ ] Forms
