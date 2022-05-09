@@ -211,7 +211,7 @@ This will be included when app is done.
 - [x] Setup and controllers
 - [x] Controllers specs
 - [x] Creating a data model
-- [ ] Processing data in models
+- [x] Processing data in models
 - [ ] Views
 - [ ] Forms
 - [ ] Validations, Model specs, and n+1 problems
