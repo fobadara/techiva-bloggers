@@ -39,6 +39,7 @@
     - [Clone this repository](#clone-this-repository)
     - [Move into the directory with](#move-into-the-directory-with)
     - [Install linter](#install-linter)
+    - [Install Bootstrap and it's dependencies](#install-bootstrap-and-its-dependencies)
     - [Create the database](#create-the-database)
     - [Install linter](#install-linter-1)
     - [Run linter](#run-linter)
@@ -104,6 +105,8 @@ You will be needing:
   ```bash
   https://www.postgresql.org/download/
   ```
+- Bootstrap and it's dependencies including jquery and popper.js.
+
 
 ### Setup
 
@@ -131,7 +134,14 @@ git clone https://github.com/fobadara/techiva-bloggers.git
   ```bash
   bundle install
   ```
+### Install Bootstrap and it's dependencies
+
+```bash
+yarn add bootstrap jquery popper.js
+```
+
 ### Create the database
+You don't need to run this command unless you want to use a seperate database.
 
 ```bash
 rails db:create
@@ -212,7 +222,7 @@ This will be included when app is done.
 - [x] Controllers specs
 - [x] Creating a data model
 - [x] Processing data in models
-- [ ] Views
+- [x] Views
 - [ ] Forms
 - [ ] Validations, Model specs, and n+1 problems
 - [ ] Add Devise

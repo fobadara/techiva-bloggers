@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>TechivaBloggers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<%= render partial: 'shared/user', locals: { user: @user } %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<% @posts.each do |post| %>
+  <%= render partial: 'shared/post', locals: { post: post } %>
+  <%= render partial: 'shared/comment', collection: post.recent_comments %>
+<% end %>
 
-  <body>
-      <section>
-        <article>
-          I am the list of posts
-        </article>
-      </section>
-     </body>
-</html>
+<div class="text-center my-3">
+  <button>Pagination</button>
+</div>
