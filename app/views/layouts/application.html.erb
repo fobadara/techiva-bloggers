@@ -7,11 +7,13 @@
     <%= csp_meta_tag %>
 
     <%= favicon_link_tag asset_path('blog.png') %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application.bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <section>
+      <%= yield %>
+    <section>
   </body>
 </html>

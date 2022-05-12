@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>TechivaBloggers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<%= render partial: 'shared/user', locals: { user: @user } %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<article class="border pb-5 pt-3 px-3" >
+  <h3 class="pb-2">Bio</h3>
+  <p><%= @user.bio %></p>
+</article>
 
-  <body>
-      <section>
-        <article>
-          Show users by ID
-        </article>
-      </section>
-  </body>
-</html>
+<%= render partial: 'shared/post', collection: @posts  %>
+<%= link_to "See all posts", user_posts_path(@user.id), class: "btn btn-primary my-5" %>
+

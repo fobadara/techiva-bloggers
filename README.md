@@ -212,7 +212,7 @@ This will be included when app is done.
 - [x] Controllers specs
 - [x] Creating a data model
 - [x] Processing data in models
-- [ ] Views
+- [x] Views
 - [ ] Forms
 - [ ] Validations, Model specs, and n+1 problems
 - [ ] Add Devise
