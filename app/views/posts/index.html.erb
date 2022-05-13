@@ -1,9 +1,21 @@
 <%= render partial: 'shared/user', locals: { user: @user } %>
 
+<% if @posts.any? == false %>
+  <p>There are no posts yet !!!</p>
+<% end %>
+
+
+
 <% @posts.each do |post| %>
   <%= render partial: 'shared/post', locals: { post: post } %>
   <%= render partial: 'shared/comment', collection: post.recent_comments %>
 <% end %>
+
+<div class="add-post-btn d-flex">
+  <button>
+    <%= link_to "Add Post", new_user_post_path(@user)%>
+  </button>
+</div>
 
 <div class="text-center my-3">
   <button>Pagination</button>

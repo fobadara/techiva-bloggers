@@ -1,0 +1,23 @@
+<%= form_with( model: @user, url: {action: "create"}, method: :post) do |form| %>
+  <div class="input">
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= render partial: 'shared/textarea', locals: {form: form, label: "Post" } %>
+  </div>
+
+  <%
+=begin%>
+ <div class="">
+    <%= form.text_field :comments_count, value: 0 %>
+    <%= form.text_field :likes_count, value: 0 %>
+  </div> 
+<%
+=end%>
+
+  <div class="submit d-flex">
+    <%= form.submit "submit" %>
+  </div>
+<% end %>

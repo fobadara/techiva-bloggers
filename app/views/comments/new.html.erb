@@ -1,0 +1,9 @@
+<%= form_with( model: @comment, url: {action: "create"}, method: :post) do |form| %>
+  <div>
+    <%= render partial: 'shared/textarea', locals: { form: form, label: "comment" } %>
+  </div>
+
+  <div class="submit d-flex">
+    <%= form.submit "submit" %>
+  </div>
+<% end %>
