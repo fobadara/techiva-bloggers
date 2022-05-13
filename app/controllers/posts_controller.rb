@@ -9,4 +9,25 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @comments = @post.comments
   end
+
+  def new
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new
+  end
+
+  def create
+    @user = User.find(params[:user_id])
+    @post = @user.posts.create(post_params)
+    @post.save
+    redirect_to user_posts_path(@user)
+  end
+
+  def new
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new
+  end
+
+  def post_params
+    params.require(:user).permit(:title, :text)
+  end
 end

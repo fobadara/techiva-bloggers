@@ -223,7 +223,7 @@ This will be included when app is done.
 - [x] Creating a data model
 - [x] Processing data in models
 - [x] Views
-- [ ] Forms
+- [x] Forms
 - [ ] Validations, Model specs, and n+1 problems
 - [ ] Add Devise
 - [ ] Add authorization rules

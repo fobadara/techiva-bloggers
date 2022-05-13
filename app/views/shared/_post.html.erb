@@ -2,8 +2,8 @@
   <div class="border rounded pt-3 pb-5 px-3">
     <h3> <%= post.title %> </h3>
     <p class="pt-2"><%= post.text %></p>
-    <span>Comments: <%= post.comments_count %>,</span>
-    <span>Likes: <%= post.likes_count %></span>
+    <span>Comments: <%= post.comments_count || 0 %>,</span>
+    <span>Likes: <%= post.likes_count || 0 %></span>
   </div>
   <br>
 <% end %>
