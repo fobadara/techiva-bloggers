@@ -11,18 +11,17 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @user = current_user
     @post = @user.posts.create(post_params)
     @post.save
     redirect_to user_posts_path(@user)
   end
 
   def new
-    @user = User.find(params[:user_id])
-    @post = @user.posts.new
+    @post = Post.new
   end
 
   def post_params
-    params.require(:user).permit(:title, :text)
+    params.permit(:title, :text)
   end
 end
