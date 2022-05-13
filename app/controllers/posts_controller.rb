@@ -10,11 +10,6 @@ class PostsController < ApplicationController
     @comments = @post.comments
   end
 
-  def new
-    @user = User.find(params[:user_id])
-    @post = @user.posts.new
-  end
-
   def create
     @user = User.find(params[:user_id])
     @post = @user.posts.create(post_params)
