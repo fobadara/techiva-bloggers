@@ -224,7 +224,7 @@ This will be included when app is done.
 - [x] Processing data in models
 - [x] Views
 - [x] Forms
-- [ ] Validations, Model specs, and n+1 problems
+- [x] Validations, Model specs, and n+1 problems
 - [ ] Add Devise
 - [ ] Add authorization rules
 - [ ] Integration specs for Views
