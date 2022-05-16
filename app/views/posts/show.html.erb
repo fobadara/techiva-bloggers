@@ -1,3 +1,10 @@
+<% flash.each do |type, msg| %>
+  <div width="350">
+    <%= msg %>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  </div>
+<% end %>
+
 <div class="posts">
 <%= render partial: 'shared/post', locals: { post: @post } %>
 <%= render partial: 'shared/comment', collection: @comments %>
