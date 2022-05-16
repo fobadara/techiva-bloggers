@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @posts = Post.all
+    @posts = Post.includes(:comments)
   end
 
   def show
@@ -13,8 +13,13 @@ class PostsController < ApplicationController
   def create
     @user = current_user
     @post = @user.posts.create(post_params)
-    @post.save
-    redirect_to user_posts_path(@user)
+    if @post.save
+      flash[:notice] = 'Post created successfully!'
+      redirect_to user_posts_path(@user)
+    else
+      flash.now[:alert] = 'Failed to create Post!!'
+      render :new
+    end
   end
 
   def new

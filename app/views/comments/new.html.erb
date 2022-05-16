@@ -1,3 +1,9 @@
+<% flash.each do |type, msg| %>
+  <div width="350">
+    <%= msg %>
+  </div>
+<% end %>
+
 <%= form_with( model: @comment, url: {action: "create"}, method: :post) do |form| %>
   <div>
     <%= render partial: 'shared/textarea', locals: { form: form, label: "comment" } %>
