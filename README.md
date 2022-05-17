@@ -225,7 +225,7 @@ This will be included when app is done.
 - [x] Views
 - [x] Forms
 - [x] Validations, Model specs, and n+1 problems
-- [ ] Add Devise
+- [x] Add Devise for user
 - [ ] Add authorization rules
 - [ ] Integration specs for Views
 - [ ] Add API endpoints
