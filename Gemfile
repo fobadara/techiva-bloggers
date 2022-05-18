@@ -65,4 +65,6 @@ end
 
 gem 'devise'
 
+gem 'cancancan'
+
 gem 'net-smtp', require: false

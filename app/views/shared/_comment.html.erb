@@ -3,6 +3,6 @@
     <%= comment.author.name %> : 
   </span>
   <span>
-    <%= comment.text%>
+    <%= truncate( comment.text, length: 20) %>
   </span>
 </p>
