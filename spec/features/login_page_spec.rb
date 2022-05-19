@@ -1,8 +1,4 @@
 require 'rails_helper'
-# I can see the username and password inputs and the "Submit" button.
-# When I click the submit button without filling in the username and the password, I get a detailed error.
-# When I click the submit button after filling in the username and the password with incorrect data, I get a detailed error.
-# When I click the submit button after filling in the username and the password with correct data, I am redirected to the root page.
 
 RSpec.describe 'Login page', js: true do
   before(:each) do
