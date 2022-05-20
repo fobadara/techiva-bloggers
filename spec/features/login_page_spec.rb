@@ -17,14 +17,16 @@ RSpec.describe 'Login page', js: true do
     expect(page).to have_content 'Invalid Email or password.'
   end
 
-  it 'shows a  detailed error when I click the submit button after filling in the username and the password with incorrect data.' do
+  it 'shows a  detailed error when I click the submit button after filling in the username and the password
+   with incorrect data.' do
     fill_in 'Email', with: 'me@gmail.com'
     fill_in 'Password', with: 'rty'
     click_button 'Log in'
     expect(page).to have_content 'Invalid Email or password.'
   end
 
-  it 'redirects me to the root page when I click the submit button after filling in the username and the password with correct data.' do
+  it 'redirects me to the root page when I click the submit button
+  after filling in the username and the password with correct data.' do
     fill_in 'Email', with: 'fobadara@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'

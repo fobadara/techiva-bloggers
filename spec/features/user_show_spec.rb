@@ -5,7 +5,8 @@ RSpec.describe 'User Show Page' do
     visit user_session_path
 
     @photo = 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/58/ballot-box-with-x_2612.png'
-    @user1 = User.create(name: 'John Doe', photo: @photo, bio: 'Lorem ipsum dolor sit amet', email: 'joe@mail.com', password: '123456', posts_count: 3)
+    @user1 = User.create(name: 'John Doe', photo: @photo, bio: 'Lorem ipsum dolor sit amet', email: 'joe@mail.com',
+                         password: '123456', posts_count: 3)
 
     @post1 = @user1.posts.create!(title: 'Animal', text: 'lorem_one', comments_count: 0, likes_count: 0)
     @post2 = @user1.posts.create!(title: 'Population', text: 'lorem_two', comments_count: 0, likes_count: 0)
@@ -34,7 +35,7 @@ RSpec.describe 'User Show Page' do
   # it 'shows the user\'s bio' do
   #   expect(page).to have_content 'Lorem ipsum dolor sit amet'
   # end
-  
+
   # it 'displays the user\'s first 3 posts.' do
   #   expect(page).to have_content 'lorem_one'
   #   expect(page).to have_content 'lorem_two'
