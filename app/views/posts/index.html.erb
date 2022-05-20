@@ -13,7 +13,7 @@
 
 <h1>All posts</h1>
 <% @posts.each do |post| %>
-  <%= render partial: 'shared/post', locals: { post: post, length: 20 } %>
+  <%= render partial: 'shared/post', locals: { post: post, length: 40 } %>
   <% if can? :destroy, post %>
       <%= button_to 'Delete post', user_post_path(@user, post), method: :delete, data: { confirm: "Are you sure you want to delete #{post.title}?" }, class: 'delete btn btn-primary text-end' %>
   <% end %>
