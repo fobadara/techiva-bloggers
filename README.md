@@ -228,7 +228,7 @@ This will be included when app is done.
 - [x] Add Devise for user
 - [x] Add authorization rules
 - [x] Integration specs for Views
-- [ ] Add API endpoints
+- [x] Add API endpoints
 - [ ] API documentation
   
 <p align="right">(<a href="#top">back to top</a>)</p>

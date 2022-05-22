@@ -1,6 +1,11 @@
 <% flash.each do |type, msg| %>
-  <div width="350">
-    <%= msg %>
+  <div class="flash align-items-center text-secondary bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+      <%= msg %>
+      </div>
+      <a href="#" class="btn-close btn-close-white me-2 m-auto" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
   </div>
 <% end %>
 
@@ -10,6 +15,6 @@
   </div>
 
   <div class="submit d-flex">
-    <%= form.submit "submit" %>
+    <%= form.submit "submit", class: "mt-1 btn btn-outline-primary btn-lg" %>
   </div>
 <% end %>

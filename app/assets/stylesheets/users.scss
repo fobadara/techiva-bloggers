@@ -1,3 +1,16 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "./colors";
+
+.user-card {
+  width: 60%;
+  background-color: $tetiary-color;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// #bio-container {
+//   width: 50%;
+// }

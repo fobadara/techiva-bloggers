@@ -1,31 +1,33 @@
-<% flash.each do |type, msg| %>
-  <div width="350">
-    <%= msg %>
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  </div>
-<% end %>
-
-<%= render partial: 'shared/user', locals: { user: @user } %>
-
-<% if @posts.any? == false %>
-  <p>There are no posts yet !!!</p>
-<% end %>
-
-<h1>All posts</h1>
-<% @posts.each do |post| %>
-  <%= render partial: 'shared/post', locals: { post: post, length: 40 } %>
-  <% if can? :destroy, post %>
-      <%= button_to 'Delete post', user_post_path(@user, post), method: :delete, data: { confirm: "Are you sure you want to delete #{post.title}?" }, class: 'delete btn btn-primary text-end' %>
+<Section class="d-flex flex-column">
+  <% flash.each do |type, msg| %>
+    <div class="flash align-items-center text-secondary bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+        <%= msg %>
+        </div>
+      <a href="#" class="btn-close btn-close-white me-2 m-auto" data-dismiss="alert" aria-label="close">&times;</a>
+      </div>
+    </div>
   <% end %>
-  <%= render partial: 'shared/comment', collection: post.recent_comments, locals: { post: @post, user: @user } %>
-<% end %>
 
-<div class="add-post-btn d-flex">
-  <button>
-    <%= link_to "Add Post", new_user_post_path(@user)%>
-  </button>
-</div>
+  <%= render partial: 'shared/user', locals: { user: @user } %>
 
-<div class="text-center my-3">
-  <button>Pagination</button>
-</div>
+  <% if @posts.any? == false %>
+    <p>There are no posts yet !!!</p>
+  <% end %>
+
+  <section class="w-75 align-self-center">
+    <h1>All posts</h1>
+    <% @posts.each do |post| %>
+      <%= render partial: 'shared/post', locals: { post: post, length: 40 } %>
+      <%= render partial: 'shared/comment', collection: post.recent_comments, locals: { post: @post, user: @user } %>
+      <% if can? :destroy, post %>
+          <%= button_to 'Delete post', user_post_path(@user, post), method: :delete, data: { confirm: "Are you sure you want to delete #{post.title}?" }, class: 'delete btn btn-danger text-end mb-2' %>
+      <% end %>
+    <% end %>
+
+    <div class="d-flex  m-1 w-100">
+      <%= link_to "Add Post", new_user_post_path(@user), class: 'm-auto btn btn-primary text-center w-25'%>
+    </div>
+  </section>
+</section>

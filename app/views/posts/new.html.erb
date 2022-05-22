@@ -1,29 +1,26 @@
 <% flash.each do |type, msg| %>
-  <div>
-    <%= msg %>
+  <div class="flash align-items-center text-secondary bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+      <%= msg %>
+      </div>
+      <a href="#" class="btn-close btn-close-white me-2 m-auto" data-dismiss="alert" aria-label="close">&times;</a>
+    </div>
   </div>
 <% end %>
+
 
 <%= form_with( model: @user, url: {action: "create"}, method: :post) do |form| %>
   <div class="input">
     <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
     <%= render partial: 'shared/textarea', locals: {form: form, label: "Post" } %>
   </div>
 
-  <%
-=begin%>
- <div class="">
-    <%= form.text_field :comments_count, value: 0 %>
-    <%= form.text_field :likes_count, value: 0 %>
-  </div> 
-<%
-=end%>
-
-  <div class="submit d-flex">
-    <%= form.submit "submit" %>
+  <div class="w-100 d-flex">
+    <%= form.submit "submit", class: "mt-1 btn btn-outline-primary btn-lg" %>
   </div>
 <% end %>

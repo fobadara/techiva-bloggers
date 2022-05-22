@@ -16,3 +16,25 @@
 
 @import "bootstrap/scss/bootstrap";
 // @import 'bootstrap-icons/font/bootstrap-icons';
+@import 'colors';
+
+body {
+  background-color: $primary-color;
+  font-family: 'Open Sans', sans-serif;
+  color: $tetiary-color;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: large;
+  font-weight: 600;
+  font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flash {
+  z-index: 100;
+}

@@ -6,7 +6,7 @@ class Ability
     can :read, :all
     return unless user.present?
 
-    can :manage, Post, id: user.id
+    can :manage, Post, author_id: user.id
     can :manage, Comment, author_id: user.id
     can :manage, Like, author_id: user.id
 

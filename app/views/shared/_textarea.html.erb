@@ -1,37 +1,4 @@
-<%
-=begin%>
- <%= form_with( model: model, url: {action: "create"}) do |form| %>
-  <div class="input">
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </div> 
-<%
-=end%>
-  
-  <div class="input">
-    <%= form.label :text, label %><br>
-    <%= form.text_area  :text %>
-  </div>
-
-  <%
-=begin%>
- <div class="submit d-flex">
-    <%= form.submit "submit" %>
-  </div> 
-<%
-=end%>
-<%
-=begin%>
- 
-  <div class="post-btn">
-    <button>
-      <%= link_to "back",  user_posts_path(user)%>
-    </button>
-  </div> 
-<%
-=end%>
-<%
-=begin%>
- <% end %> 
-<%
-=end%>
+<div class="input">
+  <%= form.label :text, label %><br>
+  <%= form.text_area  :text, class: "form-control" %>
+</div>
